@@ -42,18 +42,29 @@ function searchedUser() {
 signinForm.addEventListener('submit', (e) => {
     e.preventDefault();
     if(vaildation(userPassword)&&vaildation(userEmail)){
-        
-        if (searchedUser()) {
-          localStorage.setItem('loggedInUser', userData[index].userName);
-          window.location.href = 'home.html';
-        } else {
+        if(JSON.parse(localStorage.getItem('userData'))==null){
             Swal.fire({
                 icon: "error",
                 title: "Oops...",
-                text: "Invaild Email or Password",
-              });
+                text: "This user is not exist please sign up first!",
+                footer: '<a href="signup.html">signup</a>'
+              }); 
+            
         }
-    }
+        else{
+            if (searchedUser()) {
+                localStorage.setItem('loggedInUser', userData[index].userName);
+                window.location.href = 'home.html';
+              } else {
+                  Swal.fire({
+                      icon: "error",
+                      title: "Oops...",
+                      text: "Invaild Email or Password",
+                    });
+              }
+          }
+        }
+        
     else{
         Swal.fire({
             title: `
