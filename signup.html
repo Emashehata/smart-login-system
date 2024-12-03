@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.min.css
+    " rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="w-75 m-auto mt-5 box overflow-hidden p-5">
+            <h1 class="mt-4 mb-4">Smart Login System</h1>
+            <form id="signupForm">
+                <div class="mb-3">
+                    <input type="text" class="form-control bg-body" id="userName" placeholder="Enter Your Name" oninput="vaildation(this)"  aria-describedby="">
+                  </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control bg-body" id="userEmail" placeholder="Enter Your Email" oninput="vaildation(this)"  aria-describedby="emailHelp">
+                </div>
+                <div class="mb-5">
+                  <input type="password" class="form-control" id="userPassword"  placeholder="Enter Your Password" oninput="vaildation(this)"  >
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+                <div class="text-white text-center mt-3"><p>You have an account? <a class="text-white link-underline link-underline-opacity-0" href="index.html"> Signin</a></p></div>
+              </form>
+        </div>
+    </div>
+    <script src="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js
+    "></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/signup.js"></script>
+</body>
+</html>

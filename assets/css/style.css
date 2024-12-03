@@ -1,0 +1,82 @@
+:root{
+    --main-color:#17A2B8;
+}
+body{
+    background-color: #24353F;
+    font-family: "Titillium Web", sans-serif;
+}
+.box{
+    box-shadow:3px 3px 60px ;
+   
+}
+.box h1{
+    color: var(--main-color);
+    width: fit-content;
+    margin: auto;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.box .form-control{
+    background-color: unset !important;
+    color: white !important;
+}
+.box .form-control::placeholder{
+    color:gray !important;
+}
+.box .form-control:focus{
+    box-shadow: unset !important;
+}
+.box .btn-primary{
+    background-color: unset !important;
+    color: var(--main-color) !important;
+    border-color:var(--main-color) !important ;
+}
+.btnLogout{
+    background-color: unset !important;
+    color: grey !important;
+    border-color: #FEBE2E !important;
+}
+.btnLogout:hover{
+    background-color: #FEBE2E !important;
+    color: white !important;
+}
+.box .btn-primary:hover{
+    background-color: var(--main-color) !important;
+    color: white !important;
+}
+.box a:hover{
+    text-decoration: underline !important;
+}
+.item{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.item1{
+    background-color: #F15F5D;
+}
+.item2{
+    background-color: #FEBE2E;
+}
+.item3{
+    background-color: #4DB748;
+}
+button.swal2-close{
+    position: absolute;
+    top: 8%;
+    right: 5%;
+    color: black;
+}
+div:where(.swal2-container) h2:where(.swal2-title) {
+    text-align: unset !important;
+    padding-block: 5px !important;
+}
+div:where(.swal2-container) .swal2-html-container{
+    padding-top: 0 !important;
+    text-align: unset !important;
+}
+.fa-circle-right{
+    position: relative;
+    top:8px;
+}
